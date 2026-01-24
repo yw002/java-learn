@@ -4,6 +4,8 @@ public class MyRunnable implements Runnable {
     @Override
     public void run() {
         System.out.println("MyRunnable...run...");
+        // Runnable接口即使抛出异常也无法被捕获
+//        throw new RuntimeException("Throw....");
     }
 
     public static void main(String[] args) {
@@ -15,6 +17,5 @@ public class MyRunnable implements Runnable {
         // 调用start方法启动线程
         t1.start();
         t2.start();
-
     }
 }

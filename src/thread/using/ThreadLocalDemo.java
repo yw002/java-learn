@@ -6,7 +6,7 @@ package thread.using;
  * 3.每个线程内有一个ThreadLocalMap类型的成员变量，用来存储资源对象
  * set、get、remove方法都是以ThreadLocal自己的实例作为key，资源对象作为value
  * 4.ThreadLocal的内存泄漏问题
- * ThreadLocalMap中key是弱引用，key会被GC释放，关联value后就变成强饮用不会被GC，建议主动remove释放
+ * ThreadLocalMap中key是弱引用，key会被GC释放，关联value后就变成强引用不会被GC，建议主动remove释放
  */
 public class ThreadLocalDemo {
     static ThreadLocal<String> threadLocal = new ThreadLocal<>();
