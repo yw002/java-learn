@@ -27,3 +27,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+/src/git/TestIgnore.java
+/src/git/TestIgnore2.java
